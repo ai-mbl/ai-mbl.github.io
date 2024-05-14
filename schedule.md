@@ -20,7 +20,7 @@ description: Course schedule
           headerToolbar: {
             left: 'prev,next today',
             center: 'title',
-            right': 'timeGridWeek,timeGridDay,listWeek'
+            right: 'timeGridWeek,timeGridDay,listWeek'
           },
           googleCalendarApiKey: 'AIzaSyBhK1Z3vN8QWKNdJX5V4c9SWqMn7jyytO4',
           events: {

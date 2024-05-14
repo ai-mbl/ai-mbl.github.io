@@ -28,18 +28,16 @@ search_enabled: true
 heading_anchors: true
 permalink: pretty
 aux_links:
-  Kevin Lin:
-    - 'https://kevinl.info'
-  Just the Class on GitHub:
-    - 'https://github.com/kevinlin1/just-the-class'
+  MBL Course Page:
+    - 'https://www.mbl.edu/education/advanced-research-training-courses/course-offerings/dlmbl-deep-learning-microscopy-image-analysis'
 footer_content:
 
 # Collections for website data
 collections:
   staffers:
-  modules:
-  schedules:
-  announcements:
+  # modules:
+  # schedules:
+  # announcements:
 # Default layouts for each collection type
 defaults:
   - scope:
@@ -50,21 +48,21 @@ defaults:
       height: 300
       subpath: '/assets/images/'
       width: 300
-  - scope:
-      path: ''
-      type: modules
-    values:
-      layout: module
-  - scope:
-      path: ''
-      type: schedules
-    values:
-      layout: schedule
-  - scope:
-      path: ''
-      type: announcements
-    values:
-      layout: announcement
+  # - scope:
+  #     path: ''
+  #     type: modules
+  #   values:
+  #     layout: module
+  # - scope:
+  #     path: ''
+  #     type: schedules
+  #   values:
+  #     layout: schedule
+  # - scope:
+  #     path: ''
+  #     type: announcements
+  #   values:
+  #     layout: announcement
 
 compress_html:
   clippings: all

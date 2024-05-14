@@ -8,7 +8,8 @@ description: Course schedule
 <html lang='en'>
   <head>
     <meta charset='utf-8' />
-    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar/google-calendar@6.1.11/index.global.min.js'></script>
     <script>
 
       document.addEventListener('DOMContentLoaded', function() {

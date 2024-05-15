@@ -17,7 +17,7 @@ const dark_magenta = "#660066"
 document.addEventListener('DOMContentLoaded', function () {
     var calendarEl = document.getElementById('calendar');
     var calendar = new FullCalendar.Calendar(calendarEl, {
-        initialView: 'timeGridWeek',
+        initialView: 'listWeek',
         initialDate: '2024-08-21',
         headerToolbar: {
             left: 'prev,next today',
@@ -32,10 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             var event = arg.event;
             if (event.title.includes('Lecture')) {
-                // event.setProp('backgroundColor', dark_blue).setProp('classNames', ['hello']).setProp('borderColor', 'black');
                 event.setProp('classNames', ['lecture']);
-                // event.setProp('borderColor', 'black');
-                console.log(event);
             } else if (event.title.includes('Talk') | event.title.includes('Tutorial')) {
                 event.setProp('classNames', ['talk']);
             } else if (event.title.includes('Exercise') | event.title.includes('Project Work')) {

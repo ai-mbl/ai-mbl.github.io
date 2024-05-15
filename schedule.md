@@ -28,9 +28,13 @@ description: Course schedule
           /* font-size: 16px !important; //Your font size */
           font-weight: bold;
       }
+      .fc-event-dot {
+        background-color: inherit;
+      }
       .lecture {
         /* border-color: black; */
         background-color: var(--dark_blue);
+        border-color: var(--deep_orange);
       }
       .talk {
         background-color: var(--lavender);

@@ -13,6 +13,7 @@ const electric_purple = "#CC00FF"
 const deep_orange = "#FF9900"
 const teal_blue = "#006666"
 const dark_magenta = "#660066"
+
 document.addEventListener('DOMContentLoaded', function () {
     var calendarEl = document.getElementById('calendar');
     var calendar = new FullCalendar.Calendar(calendarEl, {
@@ -31,23 +32,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
             var event = arg.event;
             if (event.title.includes('Lecture')) {
-                event.setProp('backgroundColor', dark_blue);
+                // event.setProp('backgroundColor', dark_blue).setProp('classNames', ['hello']).setProp('borderColor', 'black');
+                event.setProp('classNames', ['lecture']);
+                // event.setProp('borderColor', 'black');
+                console.log(event);
             } else if (event.title.includes('Talk') | event.title.includes('Tutorial')) {
-                event.setProp('backgroundColor', lavender);
+                event.setProp('classNames', ['talk']);
             } else if (event.title.includes('Exercise') | event.title.includes('Project Work')) {
-                event.setProp('backgroundColor', lemon);
+                event.setProp('classNames', ['exercise']);
             } else if (event.title.includes('Lunch') | event.title.includes('Dinner')) {
-                event.setProp('backgroundColor', dark_green);
+                event.setProp('classNames', ['meal']);
             } else if (event.title.includes('Party') | event.title.includes('Day Off')) {
-                event.setProp('backgroundColor', dark_magenta);
+                event.setProp('classNames', ['party']);
             } else {
-                event.setProp('backgroundColor', peach);
+                event.setProp('classNames', ['other']);
             }
-            console.log(event.extendedProps);
-
             return null;
-        }
+        },
     });
     calendar.render();
-
 });

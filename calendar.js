@@ -49,6 +49,21 @@ document.addEventListener('DOMContentLoaded', function () {
             }
             return null;
         },
+        eventContent: function(arg) {
+            let eventTitle = document.createElement('div');
+            eventTitle.innerHTML = arg.event.title;
+
+            let eventLocation = document.createElement('div');
+            let location = arg.event.extendedProps.location;
+            if (location) {
+               let shortLocation = location.split(',')[0];
+               eventLocation.innerHTML = shortLocation;
+            }
+
+            let arrayOfDomNodes = [ eventTitle, eventLocation ]
+
+            return { domNodes: arrayOfDomNodes }
+          }
     });
     calendar.render();
 });

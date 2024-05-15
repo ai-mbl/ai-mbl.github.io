@@ -24,17 +24,11 @@ description: Course schedule
         --teal_blue: #006666;
         --dark_magenta: #660066;
       }
-      .fc-event-title {
-          /* font-size: 16px !important; //Your font size */
-          font-weight: bold;
-      }
-      .fc-event-dot {
-        background-color: inherit;
-      }
       .lecture {
         /* border-color: black; */
         background-color: var(--dark_blue);
         border-color: var(--deep_orange);
+        /* border: calc(var(--fc-list-event-dot-width) / 2) solid var(--peach); */
       }
       .talk {
         background-color: var(--lavender);
@@ -49,9 +43,30 @@ description: Course schedule
         background-color: var(--dark_magenta);
       }
       .other {
-        background-color: var(--peach);
+        background-color: var(--peach) !important;
+        /* border: calc(var(--fc-list-event-dot-width) / 2) solid var(--peach) !important; */
+      }
+      .fc-event-title {
+          /* font-size: 16px !important; //Your font size */
+          font-weight: bold;
+      }
+      .newdot {
+        display: inline-block !important;
+        box-sizing: content-box !important;
+        width: calc(var(--fc-list-event-dot-width)) !important;
+        height: calc(var(--fc-list-event-dot-width)) !important;
+        border-radius: calc(var(--fc-list-event-dot-width) / 2);
       }
   </style>
+
+  <!-- .fc-list-event-dot {
+    display: inline-block;
+    box-sizing: content-box;
+    width: 0;
+    height: 0;
+    border: calc(var(--fc-list-event-dot-width) / 2) solid var(--fc-event-border-color);
+    border-radius: calc(var(--fc-list-event-dot-width) / 2);
+  } -->
 
 
   <head>

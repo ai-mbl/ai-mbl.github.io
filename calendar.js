@@ -1,22 +1,7 @@
-const purple = "#834D9D"
-const orange = "#F2A431"
-const green = "#55B849"
-const peach = "#DB8457"
-const lavender = "#8174B1"
-const aquamarine = "#ADD8E6"
-const dark_blue = "#000080"
-const dark_red = "#800020"
-const dark_green = "#228B22"
-const lemon = "#F5C108"
-const dirty_pink = "#DA3074"
-const electric_purple = "#CC00FF"
-const deep_orange = "#FF9900"
-const teal_blue = "#006666"
-const dark_magenta = "#660066"
-
 document.addEventListener('DOMContentLoaded', function () {
     var calendarEl = document.getElementById('calendar');
     var calendar = new FullCalendar.Calendar(calendarEl, {
+        timeZone: 'America/New_York',
         initialView: 'timeGridWeek',
         initialDate: '2024-08-21',
         headerToolbar: {
@@ -48,12 +33,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     dotEl.classList.add('other');
                 }
             }
-            // var dotEl = arg.el.getElementsByClassName('fc-list-event-dot')[0];
-            // if (dotEl) {
-            //     dotEl.classList.remove('fc-list-event-dot');
-            //     dotEl.classList.add('newdot');
-            //     dotEl.classList.add('other')
-            // }
             return null;
         },
         eventClassNames: function (arg) {

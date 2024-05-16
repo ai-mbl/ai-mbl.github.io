@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Previous Courses
-permalink: /previous-groups/
+title: Group Photos
+permalink: /group-photos/
 ---
 
 ## 2019

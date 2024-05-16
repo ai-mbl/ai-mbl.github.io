@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
         timeZone: 'America/New_York',
         initialView: 'timeGridWeek',
         initialDate: '2024-08-21',
+        contentHeight: 'auto',
         headerToolbar: {
             left: 'prev,next today',
             center: 'title',

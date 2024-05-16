@@ -1,12 +1,14 @@
 # -----------------------------------------------------------------------------
 # Site settings
 # -----------------------------------------------------------------------------
-author: SAILING lab
-name: 10-708 PGM
-title: Probabilistic Graphical Models
-email: 10708-instructor@cs.cmu.edu
+author: DL@MBL Team
+name: DL@MBL
+title: Deep Learning for Microscopy Image Analysis
+# email: 10708-instructor@cs.cmu.edu
 description: >
-  10-708 - Probabilistic Graphical Models - Carnegie Mellon University - Spring 2019
+  The goal of this course is to familiarize researchers in the life sciences with state-of-the-art deep learning techniques
+  for microscopy image analysis and to introduce them to tools and frameworks that facilitate independent application of the
+  learned material after the course.
 footer_text: >
   Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 
@@ -16,29 +18,7 @@ baseurl:  # the subpath of your site, e.g. /blog/
 # -----------------------------------------------------------------------------
 # Social integration
 # -----------------------------------------------------------------------------
-github_username: sailinglab
-google_analytics: UA-131744305-1
-youtube_channel: UCim-E6bNz7lUyKZwhgN6S1A
-rss:  # notes rss
-
-# -----------------------------------------------------------------------------
-# Blog
-# -----------------------------------------------------------------------------
-# blog_name: Course Notes
-# blog_description: The notes written by students and edited by instructors
-
-# # Pagination
-# paginate: 10
-# permalink: /notes/:title/
-# paginate_path: /notes/page:num/
-
-# text:
-#   pagination:
-#     newer: 'Newer'
-#     older: 'Older'
-
-# Comments
-disqus_shortname: # put your disqus shortname
+github_username: dlmbl
 
 # Optional features
 show_social_icons:  true

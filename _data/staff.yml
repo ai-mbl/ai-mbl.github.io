@@ -1,38 +1,82 @@
-Instructors:
-    - name: Eric P. Xing
-      email: epxing@cs.cmu.edu
-      url: https://www.cs.cmu.edu/~epxing/
-      office-hours: "Monday 1:30-2:30pm, GHC 8101"
-      image: staff/eric.jpg
+Organizer:
+  - name: Jan Funke
+    affil: HHMI Janelia
+    image: staff/jan-funke.jpg
+  - name: Anna Kreshuk
+    affil: EMBO
+    image: staff/anna-kreshuk.jpg
+  - name: Alexander Krull
+    affil: University of Birmingham
+    image: staff/alexander-krull.jpg
+  - name: Shalin Mehta
+    affil: CZI Biohub
+    image: staff/shalin_mehta.webp
 
-Head-GSI:
-    - name: Maruan Al-Shedivat
-      email: alshedivat@cs.cmu.edu
-      url: https://www.cs.cmu.edu/~mshediva/
-      office-hours: "Wednesday 6-7pm, GHC 8115"
-      image: staff/maruan.png
+Faculty:
+  - name: Carsen Stringer
+    affil: HHMI Janelia
+    image: staff/carsen-stringer.jpg
+  - name: Forian Jug
+    affil: Human Technopole
+    image: staff/FlorianJug-VIB.png
+  - name: Martin Weigert
+    affil: EPFL
+    image: staff/martin-weigert.jpg
+  - name: Virginie Uhlmann
+    affil: EMBL
+    image: staff/virginie-uhlmann.jpg
 
-GSI:
-    - name: Lisa Lee
-      email: lslee@cs.cmu.edu
-      url: http://leelisa.com
-      office-hours: "Monday 6-7pm, GHC 8011"
-      image: staff/lisa.jpg
+speaker:
+  - name: Loic Royer
+    affil: CZI Biohub
+    image: staff/lo_c_royer.webp
+  - name: Vladimir Ghukasyan
+    affil: CZI Biohub
+    image: staff/Vladimir-Ghukasyan.jpg
+  - name: Constantine Pape
+    affil: Georg-August University Göttingen
+    image: staff/constantin_pape.jpg
 
-    - name: Xun Zheng
-      email: xunzheng@cs.cmu.edu
-      url: https://www.cs.cmu.edu/~xunzheng/
-      office-hours: "Friday 4-5pm, GHC 8013"
-      image: staff/xun.jpg
-
-    - name: Hao Zhang
-      email: hao@cs.cmu.edu
-      url: https://www.cs.cmu.edu/~hzhang2/
-      office-hours: "Friday 12-1pm, NSH 4225"
-      image: staff/hao.jpg
-
-    - name: Paul Liang
-      email: pliang@cs.cmu.edu
-      url: https://www.cs.cmu.edu/~pliang/
-      office-hours: "Thursday 5-6pm, GHC 8011"
-      image: staff/paul.jpg
+TA:
+  - name: Albert Dominguez-Mantes
+    affil: Weigert Lab, EPFL
+    image: staff/Albert-Dominguez-Mantes.jpg
+  - name: Anirban Ray
+    affil: Jug Lab, Human Technopole
+    image: staff/anirban-ray.jpg
+  - name: Anna Foix Romero
+    affil: Keane Group, EMBL
+    image: staff/anna-foix-romero.jpg
+  - name: Benjamin Salmon
+    affil: Krull Lab, University of Birmingham
+    # image:
+  - name: Caroline Malin-Mayor
+    affil: Funke Lab, HHMI Janelia
+    image: staff/cmmayor.jpg
+  - name: Diane Adjavon
+    affil: Funke Labe, HHMI Janelia
+    image: staff/diane-adjavon.jpg
+  - name: Ed Hirata
+    affil: CZI Biohub
+    image: staff/ed-hirata.jpg
+  - name: Igor Zubarev
+    affil: Jug Lab, Human Technopole
+    image: staff/igor-zubarev.jpg
+  - name: Larissa Heinrich
+    affil: Saalfeld Lab, HHMI Janelia
+    image: staff/larissa-heinrich.jpg
+  - name: Morgan Schwartz
+    affil: Van Valen Lab, Caltech
+    image: staff/morgan-schwartz.png
+  - name: Samuel Tonks
+    affil: Krull Lab, University of Birmingham
+    image: staff/samuel-tonks.jpg
+  - name: Vijay Venu
+    affil: Harris Lab, UT Austin
+    image: staff/vijay-venu.jpg
+  - name: Will Patton
+    affil: Independent Wizard
+    image: staff/will-patton.jpg
+  - name: Ziwen Liu
+    affil: CZI Biohub
+    image: staff/Ziwen-Liu.webp

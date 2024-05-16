@@ -19,11 +19,11 @@ document.addEventListener('DOMContentLoaded', function () {
             if (dotEl) {
                 dotEl.classList.remove('fc-list-event-dot');
                 dotEl.classList.add('newdot');
-                if (event.title.includes('Lecture')) {
+                if (event.title.includes('Lect.')) {
                     dotEl.classList.add('lecture');
-                } else if (event.title.includes('Talk') | event.title.includes('Tutorial')) {
+                } else if (event.title.includes('Talk') | event.title.includes('Tut')) {
                     dotEl.classList.add('talk');
-                } else if (event.title.includes('Exercise') | event.title.includes('Project Work')) {
+                } else if (event.title.includes('Ex.') | event.title.includes('Project Work')) {
                     dotEl.classList.add('exercise');
                 } else if (event.title.includes('Lunch') | event.title.includes('Dinner')) {
                     dotEl.classList.add('meal');
@@ -39,11 +39,11 @@ document.addEventListener('DOMContentLoaded', function () {
             let classNames = [];
             let title = arg.event.title;
 
-            if (title.includes('Lecture')) {
+            if (title.includes('Lect.')) {
                 classNames.push('lecture');
-            } else if (title.includes('Talk') || title.includes('Tutorial')) {
+            } else if (title.includes('Talk') || title.includes('Tut')) {
                 classNames.push('talk');
-            } else if (title.includes('Exercise') || title.includes('Project Work')) {
+            } else if (title.includes('Ex.') || title.includes('Project Work')) {
                 classNames.push('exercise');
             } else if (title.includes('Lunch') || title.includes('Dinner')) {
                 classNames.push('meal');

@@ -1,38 +1,82 @@
+<style>
+  h2 {
+    page-break-before: always;
+  }
+
+  .category {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .people {
+    display: flex;
+    flex-wrap: wrap;
+  }
+</style>
+
 <div class="instructors clearfix">
-  {% for instructor in site.data.staff.Instructors %}
-  <div class="instructor-profile-two-col">
-    <a href="{{ instructor.url }}" target="_blank"><img src="{{ instructor.image | prepend: '/assets/img/' | relative_url }}" /></a>
-    <ul class="instructor-info">
-      <li><span>Instructor</span> <a href="{{ instructor.url }}" target="_blank">{{ instructor.name }}</a></li>
-      <li><span>Email:</span> <a href="mailto:{{ instructor.email | encode_email }}" target="_blank">{{ instructor.email }}</a></li>
-      <li><span>Office hours:</span> {{ instructor.office-hours }}</li>
-    </ul>
+  <div class="category">
+    <h2>Organizers</h2>
+    <div class="people">
+      {% for instructor in site.data.staff.Organizer %}
+      <div class="instructor-profile-two-col">
+        <a href="{{ instructor.url }}" target="_blank"><img
+            src="{{ instructor.image | prepend: '/assets/img/' | relative_url }}" /></a>
+        <ul class="instructor-info">
+          <li>{{ instructor.name }}</li>
+          <li>{{ instructor.affil }}</li>
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
   </div>
-  {% endfor %}
 
-  {% for instructor in site.data.staff.Head-GSI %}
-  <div class="instructor-profile-two-col">
-    {% if instructor.image %}
-    <a href="{{ instructor.url }}" target="_blank"><img src="{{ instructor.image | prepend: '/assets/img/' | relative_url }}" /></a>
-    {% endif %}
-    <ul class="instructor-info">
-      <li><span>Head GSI</span> <a href="{{ instructor.url }}" target="_blank">{{ instructor.name }}</a></li>
-      <li><span>Email:</span> <a href="mailto:{{ instructor.email | encode_email }}" target="_blank">{{ instructor.email }}</a></li>
-      <li><span>Office hours:</span> {{ instructor.office-hours }}</li>
-    </ul>
+  <div class="category">
+    <h2>Faculty</h2>
+    <div class="people">
+      {% for instructor in site.data.staff.Faculty %}
+      <div class="instructor-profile-two-col">
+        <a href="{{ instructor.url }}" target="_blank"><img
+            src="{{ instructor.image | prepend: '/assets/img/' | relative_url }}" /></a>
+        <ul class="instructor-info">
+          <li>{{ instructor.name }}</li>
+          <li>{{ instructor.affil }}</li>
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
   </div>
-  {% endfor %}
 
-  {% for instructor in site.data.staff.GSI %}
-  <div class="instructor-profile-two-col">
-    {% if instructor.image %}
-    <a href="{{ instructor.url }}" target="_blank"><img src="{{ instructor.image | prepend: '/assets/img/' | relative_url }}" /></a>
-    {% endif %}
-    <ul class="instructor-info">
-      <li><span>GSI</span> <a href="{{ instructor.url }}" target="_blank">{{ instructor.name }}</a></li>
-      <li><span>Email:</span> <a href="mailto:{{ instructor.email | encode_email }}" target="_blank">{{ instructor.email }}</a></li>
-      <li><span>Office hours:</span> {{ instructor.office-hours }}</li>
-    </ul>
+  <div class="category">
+    <h2>Invited Speakers</h2>
+    <div class="people">
+      {% for instructor in site.data.staff.speaker %}
+      <div class="instructor-profile-two-col">
+        <a href="{{ instructor.url }}" target="_blank"><img
+            src="{{ instructor.image | prepend: '/assets/img/' | relative_url }}" /></a>
+        <ul class="instructor-info">
+          <li>{{ instructor.name }}</li>
+          <li>{{ instructor.affil }}</li>
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
   </div>
-  {% endfor %}
+
+  <div class="category">
+    <h2>Teaching Assistants</h2>
+    <div class="people">
+      {% for instructor in site.data.staff.TA %}
+      <div class="instructor-profile-two-col">
+        <a href="{{ instructor.url }}" target="_blank"><img
+            src="{{ instructor.image | prepend: '/assets/img/' | relative_url }}" /></a>
+        <ul class="instructor-info">
+          <li>{{ instructor.name }}</li>
+          <li>{{ instructor.affil }}</li>
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
 </div>

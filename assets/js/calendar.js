@@ -18,6 +18,18 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         eventDidMount: function (arg) {
             var event = arg.event;
+            var tootltipContent = '<strong>' + event.title + '</strong><br>';
+            var location = event.extendedProps.location;
+            if (location) {
+                tootltipContent += '<span class="location">' + location + '</span><br>';
+            }
+            var tooltip = new Tooltip(arg.el, {
+                title: tootltipContent,
+                placement: 'top',
+                trigger: 'hover',
+                container: 'body',
+                html: true
+            });
             var dotEl = arg.el.getElementsByClassName('fc-list-event-dot')[0];
             if (dotEl) {
                 dotEl.classList.remove('fc-list-event-dot');
@@ -36,6 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     dotEl.classList.add('other');
                 }
             }
+
             return null;
         },
         eventClassNames: function (arg) {

@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
         contentHeight: 'auto',
         slotMinTime: '08:00:00',
         slotMaxTime: '23:00:00',
+        firstDay: 3,
         headerToolbar: {
             left: 'prev,next today',
             center: 'title',

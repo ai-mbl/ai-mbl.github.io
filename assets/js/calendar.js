@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded', function () {
         timeZone: 'America/New_York',
         initialView: 'timeGridWeek',
         initialDate: '2024-08-21',
+        contentHeight: 'auto',
+        slotMinTime: '08:00:00',
+        slotMaxTime: '23:00:00',
         headerToolbar: {
             left: 'prev,next today',
             center: 'title',
@@ -61,6 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
             eventTitle.classList.add('fc-event-title')
 
             let eventLocation = document.createElement('div');
+            eventLocation.classList.add('fc-event-location')
             let location = arg.event.extendedProps.location;
             if (location) {
                let shortLocation = location.split(',')[0];

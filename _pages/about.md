@@ -3,7 +3,7 @@ layout: about
 permalink: /
 title: <b>P</b>robabilistic <b>G</b>raphical <b>M</b>odels
 description: 10-708 • Spring 2019 • Carnegie Mellon University
-logo: cmu-logo.png
+logo: dlmbl.png
 news: true
 ---
 

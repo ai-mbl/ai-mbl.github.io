@@ -1,0 +1,56 @@
+
+/* // Calendar style schedule */
+:root {
+  --purple: #834D9D;
+  --orange: #F2A431;
+  --green: #55B849;
+  --peach: #DB8457;
+  --lavender: #8174B1;
+  --aquamarine: #ADD8E6;
+  --dark_blue: #000080;
+  --dark_red: #800020;
+  --dark_green: #228B22;
+  --lemon: #F5C108;
+  --dirty_pink: #DA3074;
+  --electric_purple: #CC00FF;
+  --deep_orange: #FF9900;
+  --teal_blue: #006666;
+  --dark_magenta: #660066;
+}
+.lecture {
+  background-color: var(--dark_blue);
+  border-color: var(--dark_blue);
+}
+.talk {
+  background-color: var(--lavender);
+  border-color: var(--lavender);
+}
+.exercise {
+  background-color: var(--lemon);
+  border-color: var(--lemon);
+}
+.meal {
+  background-color: var(--dark_green);
+  border-color: var(--dark_green);
+}
+.party {
+  background-color: var(--dark_magenta);
+  border-color: var(--dark_magenta);
+}
+.other {
+  background-color: var(--peach);
+  border-color: var(--peach);
+}
+.fc-event-title {
+    font-weight: bold;
+}
+.fc-list-event {
+  background-color: white;
+}
+.newdot {
+  display: inline-block !important;
+  box-sizing: content-box !important;
+  width: calc(var(--fc-list-event-dot-width)) !important;
+  height: calc(var(--fc-list-event-dot-width)) !important;
+  border-radius: calc(var(--fc-list-event-dot-width) / 2);
+}

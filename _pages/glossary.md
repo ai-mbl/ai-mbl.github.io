@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: post
 title: Glossary of Deep Learning Vocabulary
 permalink: /glossary/
+toc: true
 ---
 
 ### Activation

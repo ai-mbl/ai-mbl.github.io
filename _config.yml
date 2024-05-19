@@ -55,6 +55,7 @@ plugins:
     - jekyll-email-protect
     - jekyll-paginate
     - jemoji
+    - jekyll-toc
 
 # -----------------------------------------------------------------------------
 # Other settings

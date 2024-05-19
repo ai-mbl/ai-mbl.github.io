@@ -8,9 +8,41 @@ layout: default
     <p class="post-meta">{{ page.date | date: "%B %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
   </header>
 
-  <article class="post-content">
-    {{ content }}
-  </article>
+  <style>
+    .sidebar {
+      width:25%;
+      /* position: fixed; */
+      /* top: 0;
+      right: 0; */
+      padding-top: 20px;
+      /* background-color: lightblue; */
+      position: -webkit-sticky;
+      float: left;
+      position: sticky;
+      top: 0;
+    }
+    .sidebar div {
+      padding: 8px;
+      /* font-size: 24px; */
+      display: block;
+    }
+    .main {
+      margin-left:30%;
+      padding-top: 10px;
+    }
+  </style>
+
+  <div>
+    <div class="sidebar">
+      <h3>Table of Contents</h3>
+      {{ content | toc_only }}
+    </div>
+    <div class="main">
+      <div id="markdown-content">
+        {{ content | inject_anchors }}
+      </div>
+    </div>
+  </div>
 
   {% if site.disqus_shortname and page.comments %}
     <div id="disqus_thread"></div>

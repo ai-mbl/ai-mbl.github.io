@@ -6,6 +6,7 @@ group :jekyll_plugins do
     gem 'jekyll-paginate'
     gem 'jemoji'
     gem 'unicode_utils'
+    gem 'jekyll-toc'
 end
 
 gem "webrick", "~> 1.8"

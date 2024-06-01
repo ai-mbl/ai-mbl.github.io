@@ -6,11 +6,20 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
             return 'timeGrid8Day';
         }
-    }
+    };
+    function getInitalDate() { 
+        var startDate = new Date('2024-08-21');
+        var currentDate = new Date();
+        if (currentDate > startDate) {
+            return currentDate;
+        } else {
+            return startDate;
+        }
+    };
     var calendar = new FullCalendar.Calendar(calendarEl, {
         timeZone: 'America/New_York',
         initialView: getInitialView(),
-        initialDate: '2024-08-21',
+        initialDate: getInitalDate(),
         contentHeight: 'auto',
         slotMinTime: '08:00:00',
         slotMaxTime: '23:00:00',

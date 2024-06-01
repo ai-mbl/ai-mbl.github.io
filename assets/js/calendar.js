@@ -1,8 +1,15 @@
 document.addEventListener('DOMContentLoaded', function () {
     var calendarEl = document.getElementById('calendar');
+    function getInitialView() {
+        if (window.innerWidth < 768) {
+            return 'listWeek';
+        } else {
+            return 'timeGridWeek';
+        }
+    }
     var calendar = new FullCalendar.Calendar(calendarEl, {
         timeZone: 'America/New_York',
-        initialView: 'timeGridWeek',
+        initialView: getInitialView(),
         initialDate: '2024-08-21',
         contentHeight: 'auto',
         slotMinTime: '08:00:00',

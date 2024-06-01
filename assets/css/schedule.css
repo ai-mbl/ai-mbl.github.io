@@ -31,6 +31,7 @@
   --teal_blue_muted: #cce0e0;
   --dark_magenta: #660066;
   --dark_magenta_muted: #e0cce0;
+  --fc-bg-event-color: var(--aquamarine);
 }
 .lecture {
   background-color: var(--dark_blue);
@@ -73,7 +74,6 @@
   --tooltip-border-color: var(--peach);
   --tooltip-bg-color: var(--peach_muted);
 }
-
 
 .fc-event-title {
   font-weight: bold;

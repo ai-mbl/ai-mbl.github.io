@@ -19,21 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         eventDidMount: function (arg) {
             var event = arg.event;
-            var tooltipContent = '<strong>' + event.title + '</strong><br>\n';
-            tooltipContent += calendar.formatRange(
-                event.start,
-                event.end,
-                {
-                    'hour': 'numeric',
-                    'minute': '2-digit',
-                    'meridiem': 'short'
-                });
-            var location = event.extendedProps.location;
-            if (location) {
-                tooltipContent += '\n<span class="location">' + location + '</span><br>';
-            }
-
-            var dotEl = arg.el.getElementsByClassName('fc-list-event-dot')[0];
+            
             var eventTitle = event.title.toLowerCase();
             var eventType = '';
 
@@ -48,26 +34,49 @@ document.addEventListener('DOMContentLoaded', function () {
                 eventType = 'meal';
             } else if (eventTitle.includes('party') || eventTitle.includes('day off')) {
                 eventType = 'party';
+            } else if (eventTitle.includes('phase')) {
+                eventType = 'phase';
             } else {
                 eventType = 'other';
             }
-            event.setExtendedProp('type', eventType);
 
+            event.setExtendedProp('type', eventType);
+            if (arg.event.extendedProps.type == "phase") {
+                arg.event.setProp('display', 'background');
+            }
+
+            var dotEl = arg.el.getElementsByClassName('fc-list-event-dot')[0];
             if (dotEl) {
                 dotEl.classList.remove('fc-list-event-dot');
                 dotEl.classList.add('newdot');
                 dotEl.classList.add(eventType);
             }
 
-            var tooltip = new Tooltip(arg.el, {
-                title: tooltipContent,
-                placement: 'top',
-                trigger: 'hover',
-                container: 'body',
-                html: true,
-                template: '<div class="tooltip ' + eventType + '" role="tooltip"><div class="tooltip-inner"></div></div>'
-            });
+            var tooltipExemptTypes = ['phase']; // Add types you want to exempt from tooltips
+            if (!tooltipExemptTypes.includes(eventType)) {
+                var tooltipContent = '<strong>' + event.title + '</strong><br>\n';
+                tooltipContent += calendar.formatRange(
+                    event.start,
+                    event.end,
+                    {
+                        'hour': 'numeric',
+                        'minute': '2-digit',
+                        'meridiem': 'short'
+                    });
+                var location = event.extendedProps.location;
+                if (location) {
+                    tooltipContent += '\n<span class="location">' + location + '</span><br>';
+                }
 
+                var tooltip = new Tooltip(arg.el, {
+                    title: tooltipContent,
+                    placement: 'top',
+                    trigger: 'hover',
+                    container: 'body',
+                    html: true,
+                    template: '<div class="tooltip ' + eventType + '" role="tooltip"><div class="tooltip-inner"></div></div>'
+                });
+            }
             // Set box-shadow color dynamically
             return null;
         },

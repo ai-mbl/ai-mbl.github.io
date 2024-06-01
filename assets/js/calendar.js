@@ -58,31 +58,29 @@ document.addEventListener('DOMContentLoaded', function () {
                 dotEl.classList.add('newdot');
                 dotEl.classList.add(eventType);
             }
-                        // var eventColor = window.getComputedStyle(arg.el.querySelector('.fc-event-dot')).getPropertyValue('background-color');
-            var eventColor;
-            // #eventColor = window.getComputedStyle(dotEl).backgroundColor;
 
             var tooltip = new Tooltip(arg.el, {
                 title: tooltipContent,
                 placement: 'top',
                 trigger: 'hover',
                 container: 'body',
-                html: true
+                html: true,
+                template: '<div class="tooltip ' + eventType + '" role="tooltip"><div class="tooltip-inner"></div></div>'
             });
 
+            // Set box-shadow color dynamically
             return null;
         },
         eventClassNames: function (arg) {
             var event = arg.event;
             var eventType = event.extendedProps.type;
             let classNames = [];
-            console.log(eventType)
             // Use eventType to determine the class name
             if (eventType) {
                 classNames.push(eventType);
             }
             return classNames;
-        
+
         },
         eventContent: function (arg) {
             let eventTitle = document.createElement('div');

@@ -2,45 +2,79 @@
 /* // Calendar style schedule */
 :root {
   --purple: #834D9D;
+  --purple_muted: #e6dbeb;
   --orange: #F2A431;
+  --orange_muted: #fcecd5;
   --green: #55B849;
+  --green_muted: #ddf0da;
   --peach: #DB8457;
+  --peach_muted: #f7e6dd;
   --lavender: #8174B1;
+  --lavender_muted: #e5e3ef;
   --aquamarine: #ADD8E6;
+  --aquamarine_muted: #eef7fa;
   --dark_blue: #000080;
+  --dark_blue_muted: #cccce5;
   --dark_red: #800020;
+  --dark_red_muted: #e5ccd2;
   --dark_green: #228B22;
+  --dark_green_muted: #d2e7d2;
   --lemon: #F5C108;
+  --lemon_muted: #fdf2cd;
   --dirty_pink: #DA3074;
+  --dirty_pink_muted: #f7d5e3;
   --electric_purple: #CC00FF;
+  --electric_purple_muted: #f4ccff;
   --deep_orange: #FF9900;
+  --deep_orange_muted: #ffeacc;
   --teal_blue: #006666;
+  --teal_blue_muted: #cce0e0;
   --dark_magenta: #660066;
+  --dark_magenta_muted: #e0cce0;
 }
 .lecture {
   background-color: var(--dark_blue);
   border-color: var(--dark_blue);
+  --tooltip-border-color: var(--dark_blue); 
+  --tooltip-bg-color: var(--dark_blue_muted); 
 }
+
 .talk {
   background-color: var(--lavender);
   border-color: var(--lavender);
+  --tooltip-border-color: var(--lavender);
+  --tooltip-bg-color: var(--lavender_muted);
 }
+
 .exercise {
   background-color: var(--lemon);
   border-color: var(--lemon);
+  --tooltip-border-color: var(--lemon);
+  --tooltip-bg-color: var(--lemon_muted);
 }
+
 .meal {
   background-color: var(--dark_green);
   border-color: var(--dark_green);
+  --tooltip-border-color: var(--dark_green);
+  --tooltip-bg-color: var(--dark_green_muted);
 }
+
 .party {
   background-color: var(--dark_magenta);
   border-color: var(--dark_magenta);
+  --tooltip-border-color: var(--dark_magenta);
+  --tooltip-bg-color: var(--dark_magenta_muted);
 }
+
 .other {
   background-color: var(--peach);
   border-color: var(--peach);
+  --tooltip-border-color: var(--peach);
+  --tooltip-bg-color: var(--peach_muted);
 }
+
+
 .fc-event-title {
   font-weight: bold;
   font-size: 0.8em;
@@ -68,14 +102,16 @@
 .tooltip {
   position: absolute;
   z-index: 9999;
-  background: #ffffff;
+  background: var(--tooltip-bg-color);
   color: black;
   width: 150px;
-  border-radius: 3px;
-  box-shadow: 0 0 2px rgba(0,0,0,0.5);
+  border-radius: 10px;
+  border: 1px solid var(--tooltip-border-color); /* Add a solid border */
+  box-shadow: 0 0 2px var(--tooltip-border-color); /* Use the dynamically set box-shadow color */
   padding: 10px;
   text-align: center;
 }
+
 .style5 .tooltip {
   background: #1E252B;
   color: #FFFFFF;

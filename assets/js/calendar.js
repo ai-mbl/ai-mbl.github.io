@@ -19,13 +19,21 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         eventDidMount: function (arg) {
             var event = arg.event;
-            var tootltipContent = '<strong>' + event.title + '</strong><br>';
+            var tooltipContent = '<strong>' + event.title + '</strong><br>\n';
+            tooltipContent += calendar.formatRange(
+                event.start,
+                event.end,
+                {
+                    'hour': 'numeric',
+                    'minute': '2-digit',
+                    'meridiem': 'short'
+                });
             var location = event.extendedProps.location;
             if (location) {
-                tootltipContent += '<span class="location">' + location + '</span><br>';
+                tooltipContent += '\n<span class="location">' + location + '</span><br>';
             }
             var tooltip = new Tooltip(arg.el, {
-                title: tootltipContent,
+                title: tooltipContent,
                 placement: 'top',
                 trigger: 'hover',
                 container: 'body',
@@ -72,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             return classNames;
         },
-        eventContent: function(arg) {
+        eventContent: function (arg) {
             let eventTitle = document.createElement('div');
             eventTitle.innerHTML = arg.event.title;
             eventTitle.classList.add('fc-event-title')
@@ -81,14 +89,14 @@ document.addEventListener('DOMContentLoaded', function () {
             eventLocation.classList.add('fc-event-location')
             let location = arg.event.extendedProps.location;
             if (location) {
-               let shortLocation = location.split(',')[0];
-               eventLocation.innerHTML = shortLocation;
+                let shortLocation = location.split(',')[0];
+                eventLocation.innerHTML = shortLocation;
             }
 
-            let arrayOfDomNodes = [ eventTitle, eventLocation ]
+            let arrayOfDomNodes = [eventTitle, eventLocation]
 
             return { domNodes: arrayOfDomNodes }
-          }
+        }
     });
     calendar.render();
 });

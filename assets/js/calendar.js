@@ -32,6 +32,36 @@ document.addEventListener('DOMContentLoaded', function () {
             if (location) {
                 tooltipContent += '\n<span class="location">' + location + '</span><br>';
             }
+
+            var dotEl = arg.el.getElementsByClassName('fc-list-event-dot')[0];
+            var eventTitle = event.title.toLowerCase();
+            var eventType = '';
+
+            // Determine event type based on title
+            if (eventTitle.includes('lect.')) {
+                eventType = 'lecture';
+            } else if (eventTitle.includes('talk') || eventTitle.includes('tut')) {
+                eventType = 'talk';
+            } else if (eventTitle.includes('ex.') || eventTitle.includes('project work')) {
+                eventType = 'exercise';
+            } else if (eventTitle.includes('lunch') || eventTitle.includes('dinner')) {
+                eventType = 'meal';
+            } else if (eventTitle.includes('party') || eventTitle.includes('day off')) {
+                eventType = 'party';
+            } else {
+                eventType = 'other';
+            }
+            event.setExtendedProp('type', eventType);
+
+            if (dotEl) {
+                dotEl.classList.remove('fc-list-event-dot');
+                dotEl.classList.add('newdot');
+                dotEl.classList.add(eventType);
+            }
+                        // var eventColor = window.getComputedStyle(arg.el.querySelector('.fc-event-dot')).getPropertyValue('background-color');
+            var eventColor;
+            // #eventColor = window.getComputedStyle(dotEl).backgroundColor;
+
             var tooltip = new Tooltip(arg.el, {
                 title: tooltipContent,
                 placement: 'top',
@@ -39,46 +69,20 @@ document.addEventListener('DOMContentLoaded', function () {
                 container: 'body',
                 html: true
             });
-            var dotEl = arg.el.getElementsByClassName('fc-list-event-dot')[0];
-            if (dotEl) {
-                dotEl.classList.remove('fc-list-event-dot');
-                dotEl.classList.add('newdot');
-                if (event.title.includes('Lect.')) {
-                    dotEl.classList.add('lecture');
-                } else if (event.title.includes('Talk') | event.title.includes('Tut')) {
-                    dotEl.classList.add('talk');
-                } else if (event.title.includes('Ex.') | event.title.includes('Project Work')) {
-                    dotEl.classList.add('exercise');
-                } else if (event.title.includes('Lunch') | event.title.includes('Dinner')) {
-                    dotEl.classList.add('meal');
-                } else if (event.title.includes('Party') | event.title.includes('Day Off')) {
-                    dotEl.classList.add('party');
-                } else {
-                    dotEl.classList.add('other');
-                }
-            }
 
             return null;
         },
         eventClassNames: function (arg) {
+            var event = arg.event;
+            var eventType = event.extendedProps.type;
             let classNames = [];
-            let title = arg.event.title;
-
-            if (title.includes('Lect.')) {
-                classNames.push('lecture');
-            } else if (title.includes('Talk') || title.includes('Tut')) {
-                classNames.push('talk');
-            } else if (title.includes('Ex.') || title.includes('Project Work')) {
-                classNames.push('exercise');
-            } else if (title.includes('Lunch') || title.includes('Dinner')) {
-                classNames.push('meal');
-            } else if (title.includes('Party') || title.includes('Day Off')) {
-                classNames.push('party');
-            } else {
-                classNames.push('other');
+            console.log(eventType)
+            // Use eventType to determine the class name
+            if (eventType) {
+                classNames.push(eventType);
             }
-
             return classNames;
+        
         },
         eventContent: function (arg) {
             let eventTitle = document.createElement('div');

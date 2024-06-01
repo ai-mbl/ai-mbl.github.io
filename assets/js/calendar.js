@@ -2,9 +2,9 @@ document.addEventListener('DOMContentLoaded', function () {
     var calendarEl = document.getElementById('calendar');
     function getInitialView() {
         if (window.innerWidth < 768) {
-            return 'listWeek';
+            return 'list';
         } else {
-            return 'timeGridWeek';
+            return 'timeGrid8Day';
         }
     }
     var calendar = new FullCalendar.Calendar(calendarEl, {
@@ -18,12 +18,23 @@ document.addEventListener('DOMContentLoaded', function () {
         headerToolbar: {
             left: 'today prev,next',
             center: 'title',
-            right: 'timeGridWeek,timeGridDay,listWeek'
+            right: 'timeGrid8Day,timeGridDay,list'
         },
         nowIndicator: true,
         googleCalendarApiKey: 'AIzaSyBhK1Z3vN8QWKNdJX5V4c9SWqMn7jyytO4',
         events: {
             googleCalendarId: '3240885f8cde993cfb4753a3d5b563b5a20bc8936448b5291b67fc6396b70659@group.calendar.google.com'
+        },
+        views: {
+            timeGrid8Day: {
+                type: 'timeGrid',
+                duration: { days: 8 },
+                buttonText: '8-day week' 
+            },
+            list: {
+                type: 'listWeek',
+                duration: {days: 16},
+            }
         },
         eventDidMount: function (arg) {
             var event = arg.event;

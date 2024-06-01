@@ -2,7 +2,7 @@
 layout: about
 permalink: /
 title: DL@MBL 2024
-logo: dlmbl.png
+logo: dlmbl.svg
 news: true
 ---
 

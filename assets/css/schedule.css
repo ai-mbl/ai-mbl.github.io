@@ -196,3 +196,10 @@
   margin-left: 0;
   margin-right: 0;
 }
+
+
+.fc-toolbar .fc-toolbar-chunk{
+  display: flex;
+  flex-wrap: wrap; /* Stack buttons vertically */
+  gap: 5px; /* Add gap between buttons */
+}

@@ -9,7 +9,7 @@ Organizer:
     affil: University of Birmingham
     image: staff/alexander-krull.jpg
   - name: Shalin Mehta
-    affil: CZI Biohub
+    affil: CZ Biohub
     image: staff/shalin_mehta.webp
 
 Faculty:
@@ -28,10 +28,10 @@ Faculty:
 
 speaker:
   - name: Loic Royer
-    affil: CZI Biohub
+    affil: CZ Biohub
     image: staff/lo_c_royer.webp
   - name: Vladimir Ghukasyan
-    affil: CZI Biohub
+    affil: CZI
     image: staff/Vladimir-Ghukasyan.jpg
   - name: Constantine Pape
     affil: Georg-August University Göttingen
@@ -57,7 +57,7 @@ TA:
     affil: Funke Lab, HHMI Janelia
     image: staff/diane-adjavon.jpg
   - name: Ed Hirata
-    affil: CZI Biohub
+    affil: CZ Biohub
     image: staff/ed-hirata.jpg
   - name: Igor Zubarev
     affil: Jug Lab, Human Technopole
@@ -78,5 +78,5 @@ TA:
     affil: Independent Wizard
     image: staff/will-patton.jpg
   - name: Ziwen Liu
-    affil: CZI Biohub
+    affil: CZ Biohub
     image: staff/Ziwen-Liu.webp

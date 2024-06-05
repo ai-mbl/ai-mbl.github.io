@@ -3,7 +3,7 @@ Organizer:
     affil: HHMI Janelia
     image: staff/jan-funke.jpg
   - name: Anna Kreshuk
-    affil: EMBO
+    affil: EMBL
     image: staff/anna-kreshuk.jpg
   - name: Alexander Krull
     affil: University of Birmingham
@@ -23,7 +23,7 @@ Faculty:
     affil: EPFL
     image: staff/martin-weigert.jpg
   - name: Virginie Uhlmann
-    affil: EMBL
+    affil: BioVisionCenter
     image: staff/virginie-uhlmann.jpg
 
 speaker:

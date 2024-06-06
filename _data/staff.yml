@@ -3,7 +3,7 @@ Organizer:
     affil: HHMI Janelia
     image: staff/jan-funke.jpg
   - name: Anna Kreshuk
-    affil: EMBL
+    affil: EMBL Heidelberg
     image: staff/anna-kreshuk.jpg
   - name: Alexander Krull
     affil: University of Birmingham
@@ -45,7 +45,7 @@ TA:
     affil: Jug Lab, Human Technopole
     image: staff/anirban-ray.jpg
   - name: Anna Foix Romero
-    affil: Keane Group, EMBL
+    affil: Keane Group, EMBL-EBI
     image: staff/anna-foix-romero.jpg
   - name: Benjamin Salmon
     affil: Krull Lab, University of Birmingham

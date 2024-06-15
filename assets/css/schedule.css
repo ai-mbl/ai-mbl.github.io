@@ -201,5 +201,9 @@
 .fc-toolbar .fc-toolbar-chunk{
   display: flex;
   flex-wrap: wrap; /* Stack buttons vertically */
-  gap: 5px; /* Add gap between buttons */
+  gap: 5px 20px; /* Add gap between buttons */
+}
+
+.fc-direction-ltr .fc-toolbar .fc-button-group{
+  margin: 0;
 }

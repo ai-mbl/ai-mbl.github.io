@@ -4,7 +4,6 @@
 author: DL@MBL Team
 name: DL@MBL
 title: Deep Learning for Microscopy Image Analysis
-# email: 10708-instructor@cs.cmu.edu
 description: >
   The goal of this course is to familiarize researchers in the life sciences with state-of-the-art deep learning techniques
   for microscopy image analysis and to introduce them to tools and frameworks that facilitate independent application of the

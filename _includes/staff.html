@@ -21,8 +21,7 @@
     <div class="people">
       {% for instructor in site.data.staff.Organizer %}
       <div class="instructor-profile-two-col">
-        <a href="{{ instructor.url }}" target="_blank"><img
-            src="{{ instructor.image | prepend: '/assets/img/' | relative_url }}" /></a>
+        <img src="{{ instructor.image | prepend: '/assets/img/' | relative_url }}" />
         <ul class="instructor-info">
           <li>{{ instructor.name }}</li>
           <li>{{ instructor.affil }}</li>
@@ -37,8 +36,7 @@
     <div class="people">
       {% for instructor in site.data.staff.Faculty %}
       <div class="instructor-profile-two-col">
-        <a href="{{ instructor.url }}" target="_blank"><img
-            src="{{ instructor.image | prepend: '/assets/img/' | relative_url }}" /></a>
+        <img src="{{ instructor.image | prepend: '/assets/img/' | relative_url }}" />
         <ul class="instructor-info">
           <li>{{ instructor.name }}</li>
           <li>{{ instructor.affil }}</li>
@@ -53,8 +51,7 @@
     <div class="people">
       {% for instructor in site.data.staff.speaker %}
       <div class="instructor-profile-two-col">
-        <a href="{{ instructor.url }}" target="_blank"><img
-            src="{{ instructor.image | prepend: '/assets/img/' | relative_url }}" /></a>
+        <img src="{{ instructor.image | prepend: '/assets/img/' | relative_url }}" />
         <ul class="instructor-info">
           <li>{{ instructor.name }}</li>
           <li>{{ instructor.affil }}</li>
@@ -69,8 +66,7 @@
     <div class="people">
       {% for instructor in site.data.staff.TA %}
       <div class="instructor-profile-two-col">
-        <a href="{{ instructor.url }}" target="_blank"><img
-            src="{{ instructor.image | prepend: '/assets/img/' | relative_url }}" /></a>
+        <img src="{{ instructor.image | prepend: '/assets/img/' | relative_url }}" />
         <ul class="instructor-info">
           <li>{{ instructor.name }}</li>
           <li>{{ instructor.affil }}</li>

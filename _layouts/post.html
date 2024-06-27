@@ -30,6 +30,25 @@ layout: default
       margin-left:30%;
       padding-top: 10px;
     }
+     /* Link colors */
+    .main a.internal-link {
+      color: #6d7fae; /* Normal state */
+      text-decoration: none; /* No underline */
+      font-style: italic;
+    }
+    .main a.external-link {
+      color: #007bff; /* Normal state */
+      text-decoration: none; /* No underline */
+    }
+    
+    .main a:hover {
+      color: #0056b3; /* Hover state */
+      text-decoration: underline; /* Underline on hover */
+    }
+    
+    .main a:active {
+      color: #003d7a; /* Active state */
+    }
   </style>
 
   <div>
@@ -94,4 +113,13 @@ layout: default
       });
     });
   });
+   // Add classes to differentiate internal and external links
+   var allLinks = document.querySelectorAll('.main a');
+   allLinks.forEach(function(link) {
+     if (link.hostname !== window.location.hostname) {
+       link.classList.add('external-link');
+     } else {
+       link.classList.add('internal-link');
+     }
+   });
 </script>

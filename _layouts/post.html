@@ -14,12 +14,12 @@ layout: default
       /* position: fixed; */
       /* top: 0;
       right: 0; */
-      padding-top: 20px;
+      padding-top: 0px;
       /* background-color: lightblue; */
       position: -webkit-sticky;
       float: left;
       position: sticky;
-      top: 0;
+      top: 60px;
     }
     .sidebar div {
       padding: 8px;
@@ -39,7 +39,7 @@ layout: default
     </div>
     <div class="main">
       <div id="markdown-content">
-        {{ content | inject_anchors }}
+        {{ content | inject_anchors}}
       </div>
     </div>
   </div>
@@ -60,3 +60,38 @@ layout: default
   {% endif %}
 
 </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Function to adjust scroll position
+    function adjustScroll() {
+      setTimeout(function() {
+        window.scrollTo(window.scrollX, window.scrollY - 60); // Adjust based on your header height
+      }, 100);
+    }
+
+    // Adjust scroll on page load if there's a hash in the URL
+    if (window.location.hash) {
+      adjustScroll();
+    }
+
+    // Prevent duplicate scroll adjustment on link click
+    var mainLinks = document.querySelectorAll('.main a');
+    mainLinks.forEach(function(anchor) {
+      anchor.addEventListener('click', function(event) {
+          if (window.location.hash) {
+            adjustScroll();
+          }
+      });
+    });
+
+
+    // Adjust scroll when TOC link is clicked
+    var tocLinks = document.querySelectorAll('.sidebar a[href^="#"]');
+    tocLinks.forEach(function(anchor) {
+      anchor.addEventListener('click', function(event) {
+          adjustScroll();
+      });
+    });
+  });
+</script>

@@ -13,9 +13,9 @@ Organizer:
     image: staff/shalin_mehta.webp
 
 Faculty:
-  - name: Carsen Stringer
-    affil: HHMI Janelia
-    image: staff/carsen-stringer.jpg
+  - name: Beth Cimini
+    affil: Broad Institute
+    image: staff/beth-cimini.png
   - name: Florian Jug
     affil: Human Technopole
     image: staff/FlorianJug-VIB.png
@@ -36,6 +36,15 @@ speaker:
   - name: Constantine Pape
     affil: Georg-August University Göttingen
     image: staff/constantin_pape.jpg
+  - name: Manuel Leonetti
+    affil: CZ Biohub
+    image: staff/manuel_leonetti.webp
+  - name: Kyle Harrington
+    affil: CZI
+    image: staff/kyle-harrington.jpg
+  - name: Nodar Gogoberidze
+    affil: Cimini Lab, Broad Institute
+    image: staff/Nodar-Gogoberidze.webp
 
 TA:
   - name: Albert Dominguez-Mantes
@@ -80,3 +89,6 @@ TA:
   - name: Ziwen Liu
     affil: CZ Biohub
     image: staff/Ziwen-Liu.webp
+  - name: Jordao Brangantini
+    affil: CZ Biohub
+    image: staff/Jordao-Bragantini.jpeg

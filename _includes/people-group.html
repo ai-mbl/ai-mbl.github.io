@@ -1,0 +1,35 @@
+{% assign sorted_names = "" | split: "" %}
+{% assign names_prefixed_with_last = "" | split: "" %}
+
+{% for instructor in group.members %}
+  {% assign name = instructor.name %}
+  {% assign name_parts = name | split: " " %}
+  {% assign last_name = name_parts | last %}
+  {% assign name_prefixed_with_last = name | prepend: last_name %}
+  {% assign names_prefixed_with_last = names_prefixed_with_last | push: name_prefixed_with_last %}
+{% endfor %}
+
+{% assign sorted_with_prefix = names_prefixed_with_last | sort %}
+
+{% for name_with_prefix in sorted_with_prefix %}
+  {% assign name_parts = name_with_prefix | split: " " %}
+  {% assign last_name = name_parts | last %}
+  {% assign name = name_with_prefix | replace_first: last_name %}
+  {% assign sorted_names = sorted_names | push: name %}
+{% endfor %}
+
+<div class="category">
+    <h2>{{ group.name }}</h2>
+    <div class="people">
+        {% for name in sorted_names %}
+            {% assign instructor = group.members | where:"name", name | first %}
+        <div class="instructor-profile-flex-col">
+            <img src="{{ instructor.image | prepend: '/assets/img/' | relative_url }}" />
+            <ul class="instructor-info">
+                <li>{{ instructor.name }}</li>
+                <li class="affiliation">{{ instructor.affil }}</li>
+            </ul>
+        </div>
+        {% endfor %}
+    </div>
+</div>

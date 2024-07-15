@@ -20,63 +20,9 @@
 </style>
 
 <div class="instructors clearfix">
-  <div class="category">
-    <h2>Organizers</h2>
-    <div class="people">
-      {% for instructor in site.data.staff.Organizer %}
-      <div class="instructor-profile-flex-col">
-        <img src="{{ instructor.image | prepend: '/assets/img/' | relative_url }}" />
-        <ul class="instructor-info">
-          <li>{{ instructor.name }}</li>
-          <li class="affiliation">{{ instructor.affil }}</li>
-        </ul>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
 
-  <div class="category">
-    <h2>Faculty</h2>
-    <div class="people">
-      {% for instructor in site.data.staff.Faculty %}
-      <div class="instructor-profile-flex-col">
-        <img src="{{ instructor.image | prepend: '/assets/img/' | relative_url }}" />
-        <ul class="instructor-info">
-          <li>{{ instructor.name }}</li>
-          <li class="affiliation">{{ instructor.affil }}</li>
-        </ul>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
+  {% for group in site.data.staff %}
+    {% include people-group.html %}
+  {% endfor %}
 
-  <div class="category">
-    <h2>Invited Speakers</h2>
-    <div class="people">
-      {% for instructor in site.data.staff.speaker %}
-      <div class="instructor-profile-flex-col">
-        <img src="{{ instructor.image | prepend: '/assets/img/' | relative_url }}" />
-        <ul class="instructor-info">
-          <li>{{ instructor.name }}</li>
-          <li class="affiliation">{{ instructor.affil }}</li>
-        </ul>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-
-  <div class="category">
-    <h2>Teaching Assistants</h2>
-    <div class="people">
-      {% for instructor in site.data.staff.TA %}
-      <div class="instructor-profile-flex-col">
-        <img src="{{ instructor.image | prepend: '/assets/img/' | relative_url }}" />
-        <ul class="instructor-info">
-          <li>{{ instructor.name }}</li>
-          <li class="affiliation">{{ instructor.affil }}</li>
-        </ul>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
 </div>

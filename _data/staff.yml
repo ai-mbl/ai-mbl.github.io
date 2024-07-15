@@ -1,4 +1,5 @@
-Organizer:
+- name: Organizers
+  members:
   - name: Jan Funke
     affil: HHMI Janelia
     image: staff/jan-funke.jpg
@@ -12,7 +13,8 @@ Organizer:
     affil: CZ Biohub
     image: staff/shalin_mehta.webp
 
-Faculty:
+- name: Faculty
+  members:
   - name: Beth Cimini
     affil: Broad Institute
     image: staff/beth-cimini.png
@@ -26,7 +28,8 @@ Faculty:
     affil: BioVisionCenter
     image: staff/virginie-uhlmann.jpg
 
-speaker:
+- name: Invited Speakers
+  members:
   - name: Manuel Leonetti
     affil: CZ Biohub
     image: staff/manuel_leonetti.webp
@@ -46,7 +49,8 @@ speaker:
     affil: Cimini Lab, Broad Institute
     image: staff/Nodar-Gogoberidze.webp
 
-TA:
+- name: Teaching Assistants
+  members:
   - name: Albert Dominguez Mantes
     affil: Weigert and La Manno Lab, EPFL
     image: staff/Albert-Dominguez-Mantes.jpg

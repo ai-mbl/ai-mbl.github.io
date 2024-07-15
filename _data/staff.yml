@@ -20,7 +20,7 @@ Faculty:
     affil: Human Technopole
     image: staff/FlorianJug-VIB.png
   - name: Martin Weigert
-    affil: EPFL
+    affil: Dresden University of Technology
     image: staff/martin-weigert.jpg
   - name: Virginie Uhlmann
     affil: BioVisionCenter
@@ -48,7 +48,7 @@ speaker:
 
 TA:
   - name: Albert Dominguez Mantes
-    affil: Weigert Lab, EPFL
+    affil: Weigert and La Manno Lab, EPFL
     image: staff/Albert-Dominguez-Mantes.jpg
   - name: Anirban Ray
     affil: Jug Lab, Human Technopole

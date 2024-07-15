@@ -20,8 +20,8 @@
 
 
 %instructor-profile {
-    display: block;
-    float: left;
+    display: flex;
+    align-items: center;
     height: 210px;
 
     img {

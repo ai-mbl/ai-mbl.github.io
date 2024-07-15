@@ -33,13 +33,13 @@ speaker:
   - name: Vladimir Ghukasyan
     affil: CZI
     image: staff/Vladimir-Ghukasyan.jpg
-  - name: Loic Royer
+  - name: Loïc Royer
     affil: CZ Biohub
     image: staff/lo_c_royer.webp
   - name: Kyle Harrington
     affil: CZI
     image: staff/kyle-harrington.jpg
-  - name: Constantine Pape
+  - name: Constantin Pape
     affil: Georg-August University Göttingen
     image: staff/constantin_pape.jpg
   - name: Nodar Gogoberidze
@@ -47,7 +47,7 @@ speaker:
     image: staff/Nodar-Gogoberidze.webp
 
 TA:
-  - name: Albert Dominguez-Mantes
+  - name: Albert Dominguez Mantes
     affil: Weigert Lab, EPFL
     image: staff/Albert-Dominguez-Mantes.jpg
   - name: Anirban Ray
@@ -71,7 +71,7 @@ TA:
   - name: Igor Zubarev
     affil: Jug Lab, Human Technopole
     image: staff/igor-zubarev.jpg
-  - name: Jordao Brangantini
+  - name: Jordão Brangantini
     affil: CZ Biohub
     image: staff/Jordao-Bragantini.jpeg
   - name: Larissa Heinrich

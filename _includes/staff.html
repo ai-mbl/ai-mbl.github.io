@@ -13,6 +13,10 @@
     display: flex;
     flex-wrap: wrap;
   }
+  .affiliation {
+    font-style: italic;
+    font-size: 0.9em;
+  }
 </style>
 
 <div class="instructors clearfix">
@@ -20,11 +24,11 @@
     <h2>Organizers</h2>
     <div class="people">
       {% for instructor in site.data.staff.Organizer %}
-      <div class="instructor-profile-two-col">
+      <div class="instructor-profile-flex-col">
         <img src="{{ instructor.image | prepend: '/assets/img/' | relative_url }}" />
         <ul class="instructor-info">
           <li>{{ instructor.name }}</li>
-          <li>{{ instructor.affil }}</li>
+          <li class="affiliation">{{ instructor.affil }}</li>
         </ul>
       </div>
       {% endfor %}
@@ -35,11 +39,11 @@
     <h2>Faculty</h2>
     <div class="people">
       {% for instructor in site.data.staff.Faculty %}
-      <div class="instructor-profile-two-col">
+      <div class="instructor-profile-flex-col">
         <img src="{{ instructor.image | prepend: '/assets/img/' | relative_url }}" />
         <ul class="instructor-info">
           <li>{{ instructor.name }}</li>
-          <li>{{ instructor.affil }}</li>
+          <li class="affiliation">{{ instructor.affil }}</li>
         </ul>
       </div>
       {% endfor %}
@@ -50,11 +54,11 @@
     <h2>Invited Speakers</h2>
     <div class="people">
       {% for instructor in site.data.staff.speaker %}
-      <div class="instructor-profile-two-col">
+      <div class="instructor-profile-flex-col">
         <img src="{{ instructor.image | prepend: '/assets/img/' | relative_url }}" />
         <ul class="instructor-info">
           <li>{{ instructor.name }}</li>
-          <li>{{ instructor.affil }}</li>
+          <li class="affiliation">{{ instructor.affil }}</li>
         </ul>
       </div>
       {% endfor %}
@@ -65,11 +69,11 @@
     <h2>Teaching Assistants</h2>
     <div class="people">
       {% for instructor in site.data.staff.TA %}
-      <div class="instructor-profile-two-col">
+      <div class="instructor-profile-flex-col">
         <img src="{{ instructor.image | prepend: '/assets/img/' | relative_url }}" />
         <ul class="instructor-info">
           <li>{{ instructor.name }}</li>
-          <li>{{ instructor.affil }}</li>
+          <li class="affiliation">{{ instructor.affil }}</li>
         </ul>
       </div>
       {% endfor %}

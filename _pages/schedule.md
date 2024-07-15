@@ -17,4 +17,13 @@ permalink: /schedule/
   <body>
     <div id='calendar'></div>
   </body>
+  <foot>
+    <div style="margin-top: 20px;">
+    <a href="https://calendar.google.com/calendar/u/0?cid=MzI0MDg4NWY4Y2RlOTkzY2ZiNDc1M2EzZDViNTYzYjVhMjBiYzg5MzY0NDhiNTI5MWI2N2ZjNjM5NmI3MDY1OUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t">Add to your Google calendar</a> 
+    </div>
+  </foot>
 </html>
+
+
+
+

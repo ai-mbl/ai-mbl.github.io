@@ -7,19 +7,29 @@ document.addEventListener('DOMContentLoaded', function () {
             return 'timeGrid8Day';
         }
     };
-    function getInitalDate() { 
-        var startDate = new Date('2024-08-21');
+    function getInitalDate() {
+        var startDate = new Date('2024-08-24');
         var currentDate = new Date();
+        console.log(currentDate);
         if (currentDate > startDate) {
             return currentDate;
         } else {
             return startDate;
         }
     };
+    function beforeStart() {
+        var startDate = new Date('2024-08-24');
+        var currentDate = new Date();
+        if (currentDate > startDate) {
+            return false;
+        } else {
+            return true;
+        }
+    };
     var calendar = new FullCalendar.Calendar(calendarEl, {
         timeZone: 'America/New_York',
         initialView: getInitialView(),
-        initialDate: getInitalDate(),
+        initialDate: getInitalDate(), //this should work but is broken
         contentHeight: 'auto',
         slotMinTime: '08:00:00',
         slotMaxTime: '23:00:00',
@@ -38,16 +48,16 @@ document.addEventListener('DOMContentLoaded', function () {
             timeGrid8Day: {
                 type: 'timeGrid',
                 duration: { days: 8 },
-                buttonText: '8-day week' 
+                buttonText: '8-day week'
             },
             list: {
                 type: 'listWeek',
-                duration: {days: 16},
+                duration: { days: 16 },
             }
         },
         eventDidMount: function (arg) {
             var event = arg.event;
-            
+
             var eventTitle = event.title.toLowerCase();
             var eventType = '';
 
@@ -137,5 +147,8 @@ document.addEventListener('DOMContentLoaded', function () {
             return { domNodes: arrayOfDomNodes }
         }
     });
+    if (!beforeStart()) {
+        calendar.today();
+    }
     calendar.render();
 });

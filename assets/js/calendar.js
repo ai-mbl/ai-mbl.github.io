@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     var calendarEl = document.getElementById('calendar');
+    var startDate = new Date('2024-08-21');
+    var endDate = new Date('2024-09-05');
     function getInitialView() {
         if (window.innerWidth < 768) {
             return 'list';
@@ -7,20 +9,10 @@ document.addEventListener('DOMContentLoaded', function () {
             return 'timeGrid8Day';
         }
     };
-    function getInitalDate() {
-        var startDate = new Date('2024-08-24');
+
+    function duringCourse() {
         var currentDate = new Date();
-        console.log(currentDate);
-        if (currentDate > startDate) {
-            return currentDate;
-        } else {
-            return startDate;
-        }
-    };
-    function beforeStart() {
-        var startDate = new Date('2024-08-24');
-        var currentDate = new Date();
-        if (currentDate > startDate) {
+        if ((currentDate < startDate) || (currentDate > endDate)) {
             return false;
         } else {
             return true;
@@ -29,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var calendar = new FullCalendar.Calendar(calendarEl, {
         timeZone: 'America/New_York',
         initialView: getInitialView(),
-        initialDate: getInitalDate(), //this should work but is broken
+        initialDate: startDate, //this should work but is broken
         contentHeight: 'auto',
         slotMinTime: '08:00:00',
         slotMaxTime: '23:00:00',
@@ -147,7 +139,7 @@ document.addEventListener('DOMContentLoaded', function () {
             return { domNodes: arrayOfDomNodes }
         }
     });
-    if (!beforeStart()) {
+    if (duringCourse()) {
         calendar.today();
     }
     calendar.render();

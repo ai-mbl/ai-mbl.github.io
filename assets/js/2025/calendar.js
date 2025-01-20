@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
             right: 'timeGrid8Day,timeGridDay,list'
         },
         nowIndicator: true,
-        googleCalendarApiKey: '', // TODO: Add API key
+        googleCalendarApiKey: 'AIzaSyCFvUlXSihnRyPGbMdjRQmDtGUS5OoomLw', // TODO: Add API key
         events: {
             googleCalendarId: '7be92d4963c81b366f163c3dd90033f0cd52501a2c041500516a26d87707760e@group.calendar.google.com'
         },

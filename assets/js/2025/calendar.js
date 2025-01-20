@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 eventType = 'lecture';
             } else if (eventTitle.includes('talk') || eventTitle.includes('tut')) {
                 eventType = 'talk';
-            } else if (eventTitle.includes('ex.') || eventTitle.includes('project work')) {
+            } else if (eventTitle.includes('ex.') || (eventTitle.includes('project') && eventTitle.includes('work'))) {
                 eventType = 'exercise';
             } else if (eventTitle.includes('lunch') || eventTitle.includes('dinner')) {
                 eventType = 'meal';

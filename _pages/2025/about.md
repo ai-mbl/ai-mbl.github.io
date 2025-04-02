@@ -2,6 +2,7 @@
 layout: about
 permalink: /2025/about/
 title: AI@MBL 2025
+description: Artificial Intelligence for Microscopy Image Analysis
 logo: dlmbl.svg
 news: true
 ---

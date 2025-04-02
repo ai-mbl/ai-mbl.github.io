@@ -2,6 +2,7 @@
 layout: about
 permalink: /2024/about/
 title: DL@MBL 2024
+description: Deep Learning for Microscopy Image Analysis
 logo: dlmbl.svg
 news: true
 ---

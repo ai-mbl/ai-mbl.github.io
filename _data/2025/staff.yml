@@ -1,0 +1,74 @@
+- name: Organizers
+  members:
+  - name: Jan Funke
+    affil: HHMI Janelia
+    image: staff/jan-funke.jpg
+  - name: Anna Kreshuk
+    affil: EMBL Heidelberg
+    image: staff/anna-kreshuk.jpg
+  - name: Alexander Krull
+    affil: University of Birmingham
+    image: staff/alexander-krull.jpg
+  - name: Shalin Mehta
+    affil: CZ Biohub
+    image: staff/shalin_mehta.webp
+
+- name: Faculty
+  members:
+  - name: Florian Jug
+    affil: Human Technopole
+    image: staff/FlorianJug-VIB.png
+  - name: Martin Weigert
+    affil: Dresden University of Technology
+    image: staff/martin-weigert.jpg
+  - name: Virginie Uhlmann
+    affil: BioVisionCenter
+    image: staff/virginie-uhlmann.jpg
+
+- name: Teaching Assistants
+  members:
+  - name: Diane Adjavon
+    affil: Funke Lab, HHMI Janelia
+    image: staff/diane-adjavon.jpg
+  - name: Larissa Heinrich
+    affil: Saalfeld Lab, HHMI Janelia
+    image: staff/larissa-heinrich.jpg
+  - name: Morgan Schwartz
+    affil: Funke Lab, HHMI Janelia
+    image: staff/morgan-schwartz.png
+  - name: Frederico Carrara
+    affil: Human Technopole
+    image: staff/frederico-carrara.jpg
+  # - name: Julia Lyudchik
+    # affil: 
+    # image: staff/julia-lyudchik.jpg
+  - name: Ryan Savill
+    affil: Veenvliet Group, MPI of Molecular Cell Biology and Genetics
+    image: staff/ryan-savill.jpg
+  - name: Albert Dominguez Mantes
+    affil: Weigert and La Manno Lab, EPFL
+    image: staff/Albert-Dominguez-Mantes.jpg
+  - name: Anna Foix Romero
+    affil: Uhlmann Group, EMBL-EBI
+    image: staff/anna-foix-romero.jpg
+  - name: Benjamin Salmon
+    affil: Krull Lab, University of Birmingham
+    image: staff/ben-salmon.jpeg
+  - name: Caroline Malin-Mayor
+    affil: Funke Lab, HHMI Janelia
+    image: staff/cmmayor.jpg
+  - name: Ed Hirata
+    affil: CZ Biohub
+    image: staff/ed-hirata.jpg
+  # - name: Igor Zubarev
+  #   affil: Jug Lab, Human Technopole
+  #   image: staff/igor-zubarev.jpg
+  - name: Jordão Bragantini
+    affil: CZ Biohub
+    image: staff/Jordao-Bragantini.jpeg
+  - name: Vijay Venu
+    affil: Harris Lab, UT Austin
+    image: staff/vijay-venu.jpg
+  # - name: Xuefei (Julie) Wang
+  #   affil: Van Valen Lab, Caltech
+  #   image: staff/julie-wang.jpg

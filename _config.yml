@@ -10,14 +10,14 @@ description: >
   learned material after the course.
 footer_text: >
   Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-repository: dlmbl/dlmbl.github.io
-url: https://dlmbl.github.io # the base hostname & protocol for your site
+repository: ai-mbl/ai-mbl.github.io
+url: https://ai-mbl.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
 
 # -----------------------------------------------------------------------------
 # Social integration
 # -----------------------------------------------------------------------------
-github_username: dlmbl
+github_username: ai-mbl
 
 # Optional features
 show_social_icons:  true

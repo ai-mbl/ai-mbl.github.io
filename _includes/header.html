@@ -27,7 +27,14 @@
 
       <div class="trigger">
         {% assign year = page.url | split: '/' | slice: 1, 1 | first %}
-        <a href="https://github.com/dlmbl/DL-MBL-{{ year }}" target="_blank">Exercises</a>
+        {% assign year_number = year | plus: 0 %}
+        {% if year_number < 2025 %}
+          {% assign coursename = "DL-MBL" %}
+        {% else %}
+          {% assign coursename = "AI-MBL" %}
+        {% endif %}
+
+        <a href="https://github.com/ai-mbl/{{ coursename }}-{{ year }}" target="_blank">Exercises</a>
         <a class="page-link" href="{{ '/' | append: year | append: '/group-photos/' | relative_url }}">Group Photos</a>
         <a class="page-link" href="{{ '/' | append: year | append: '/glossary/' | relative_url }}">Glossary</a>
         <a class="page-link" href="{{ '/' | append: year | append: '/schedule/' | relative_url }}">Schedule</a>

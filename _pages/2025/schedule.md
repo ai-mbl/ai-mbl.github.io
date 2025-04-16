@@ -19,7 +19,7 @@ permalink: /2025/schedule/
   </body>
   <foot>
     <div style="margin-top: 20px;">
-    <a href="https://calendar.google.com/calendar/u/0?cid=MzI0MDg4NWY4Y2RlOTkzY2ZiNDc1M2EzZDViNTYzYjVhMjBiYzg5MzY0NDhiNTI5MWI2N2ZjNjM5NmI3MDY1OUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t">Add to your Google calendar</a> 
+    <a href="https://calendar.google.com/calendar/u/1?cid=N2JlOTJkNDk2M2M4MWIzNjZmMTYzYzNkZDkwMDMzZjBjZDUyNTAxYTJjMDQxNTAwNTE2YTI2ZDg3NzA3NzYwZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t">Add to your Google calendar</a> 
     </div>
   </foot>
 </html>

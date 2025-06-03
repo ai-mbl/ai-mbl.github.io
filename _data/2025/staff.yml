@@ -12,7 +12,11 @@
   - name: Shalin Mehta
     affil: CZ Biohub
     image: staff/shalin_mehta.webp
-
+- name: Course Manager
+  members:
+  - name: Dominique Harajchi
+    affil: HHMI Janelia
+    image: staff/dominique-harajchi.jpg
 - name: Faculty
   members:
   - name: Florian Jug
@@ -24,7 +28,35 @@
   - name: Virginie Uhlmann
     affil: BioVisionCenter
     image: staff/virginie-uhlmann.jpg
-
+  - name: Nathan Clack
+    affil: CZI
+    image: staff/nathan-clack.jpg
+  - name: Talley Lambert
+    affil: Harvard Medical School
+    image: staff/talley-lambert.jpg
+  - name: Rachel Lee
+    affil: HHMI Janelia
+    image: staff/rachel-lee.jpg
+  - name: Constantin Pape
+    affil: Universität Göttingen
+    image: staff/constantin-pape.jpg
+  - name: Wyatt Korff
+    affil: HHMI Janelia
+    image: staff/wyatt-korff.jpg
+- name: Lecturers
+  members:
+  - name: Vladimir Ghukasyan
+    affil: CZI
+    image: staff/Vladimir-Ghukasyan.jpg
+  - name: Dari Kimanius
+    affil: CZI
+    image: staff/dari-kimanius.jpg
+  - name: Stephan Saalfeld
+    affil: HHMI Janelia
+    image: staff/stephan-saalfeld.jpg
+  - name: Evangelia Christodoulou
+    affil: DKFZ Heidelberg
+    image: staff/evangelia-christodoulou.jpg
 - name: Teaching Assistants
   members:
   - name: Diane Adjavon
@@ -63,9 +95,6 @@
   - name: Ed Hirata
     affil: CZ Biohub
     image: staff/ed-hirata.jpg
-  # - name: Igor Zubarev
-  #   affil: Jug Lab, Human Technopole
-  #   image: staff/igor-zubarev.jpg
   - name: Jordão Bragantini
     affil: CZ Biohub
     image: staff/Jordao-Bragantini.jpeg

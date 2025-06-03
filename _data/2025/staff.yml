@@ -39,6 +39,9 @@
   - name: Frederico Carrara
     affil: Human Technopole
     image: staff/frederico-carrara.jpg
+  - name: Alex Hillsley
+    affil: CZ Biohub
+    image: staff/alex-hillsley.png
   # - name: Julia Lyudchik
     # affil: 
     # image: staff/julia-lyudchik.jpg
@@ -69,6 +72,6 @@
   - name: Vijay Venu
     affil: Harris Lab, UT Austin
     image: staff/vijay-venu.jpg
-  # - name: Xuefei (Julie) Wang
-  #   affil: Van Valen Lab, Caltech
-  #   image: staff/julie-wang.jpg
+  - name: Xuefei (Julie) Wang
+    affil: Van Valen Lab, Caltech
+    image: staff/julie-wang.jpg

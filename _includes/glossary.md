@@ -25,8 +25,20 @@ Specifically in DL, bias also refers to the offset from the origin, i.e. the ter
 ### Capacity
 The capacity of a deep learning neural network model describes the scope of functions that it is able to learn. While capacity is a somewhat abstract concept the number of [learnable model parameters](#weights-of-a-network) is often a useful proxy. Models with higher capacity have a stronger tendency to [overfit](#overfitting) but might also be necessary to obtain good performance on complex tasks.
 
+### Classifier
+A machine learning model that maps an input (often images) to a category.
+
 ### Class-imbalanced dataset
 Problem in which the labels for the different classes have significantly different frequencies. If training examples are sampled randomly from those datasets, networks will likely not learn to predict the infrequent classes cause there is very little incentive to.
+
+### Convolutional Layer
+A type of layer that's linear and shift-equivariant and therefore useful for processing images. For the mathematical description see [Wikipedia](https://en.wikipedia.org/wiki/Kernel_(image_processing)#Convolution) and for a nice visualization see [here](https://ezyang.github.io/convolution-visualizer/index.html). Related glossary items: [Kernel](#Kernel), [Same Convolution](#same-convolution), [Valid Convolution](#valid-convolution).
+
+### Convolutional Neural Network
+[NeuralNetwork](#neural-network) composed of several [convolutional layers](#convolutional-layer), typically used for image inputs. Can also include other types of layers (otherwise we call it a fully convolutional neural network).
+
+### Deep Neural Network
+[NeuralNetwork](#neural-network) with many layers.
 
 ### Decision Boundary
 The space of all possible inputs to your network can be divided into regions giving you the same answer. The surfaces separating those regions from each other are called decision boundaries. For low-dimensional problems this is easy to visualize - as you did in Exercise2 - but with high-dimensional inputs like images the concept becomes increasingly abstract.
@@ -82,6 +94,12 @@ A measure to evaluate the performance of your model that may or may not be direc
 ### Minibatch
 The set of examples used in one iteration (in one [gradient update](#gradient-descent)) during training.
 
+### Multi-Layer Perceptron (MLP)
+A perceptron can be described b y the equation $y = f(x^\intercal w + b)$, where $f$ denotes a non-linear function, $b$ denotes the bias (a constant offset vector) and $w$ denotes a vector of weights. Alternative words for a perceptron are fully-connected layer or dense layer. A multi-layer perceptron is a [neural network](neural-network) that chains several perceptrons.
+
+### Neural Network
+A machine learning model composed of small computational units such as [perceptrons](#multi-layer-perceptron), [convolution layers](#convolutional-layer), [pooling layers](#pooling), [non-linear activations](#activations).
+
 ### Overfitting
 Creating a model that matches the [training data](#training-set) so closely that the model fails to [generalize](#generalization), essentially memorizing the training data.
 
@@ -104,7 +122,7 @@ Process of adapting a learning algorithm in order to prevent [overfitting](#over
 A sequence of layers with a skip connection from the beginning to the end, such that the input of the first layer and output of the last layer are added together. Thus, the learned values are a “residual” or delta that is added to the input. The residual connections allow the gradients to “flow” backward through the network directly which can sometimes stabilize training.
 
 ### Same Convolution
-A convolution that does not change the size of the image. In order to fit the kernel additional boundary values are made up. Possible strategies for setting the values at the boundary are constant (e.g., setting values to 0), mirroring, or just repeating the boundary value again.
+A [convolution](#convolutional-layer) that does not change the size of the image. In order to fit the kernel additional boundary values are made up. Possible strategies for setting the values at the boundary are constant (e.g., setting values to 0), mirroring, or just repeating the boundary value again.
 Read more: [Guide on convolutional arithmetic](http://arxiv.org/abs/1603.07285)
 
 ### Semantic Segmentation
@@ -127,7 +145,7 @@ Most popular network architecture for image-to-image type tasks in biomedical im
 Read more: [The original U-Net paper](https://arxiv.org/abs/1505.04597)
 
 ### Valid Convolution
-A convolution that only produces output data where the [kernel](#kernel) "fits". A 3 by 3 convolution would decrease the image size by 2 in x and y. See also [Same Convolution](#same-convolution).
+A [convolution](#convolutional-layer) that only produces output data where the [kernel](#kernel) "fits". A 3 by 3 convolution would decrease the image size by 2 in x and y. See also [Same Convolution](#same-convolution).
 Read more: [Guide on convolutional arithmetic](http://arxiv.org/abs/1603.07285)
 
 ### Validation Set

@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     var calendarEl = document.getElementById('calendar');
     var startDate = new Date('2025-08-22');
-    var endDate = new Date('2024-09-06');
+    var endDate = new Date('2025-09-06');
     function getInitialView() {
         if (window.innerWidth < 768) {
             return 'list';
